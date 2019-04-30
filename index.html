@@ -7,11 +7,17 @@
     <script type="text/javascript" src="./lib/paper-full.js"></script>
     <script type="text/javascript" src="./lib/howler1.1.29.js"></script>
     <script type="text/paperscript" canvas="myCanvas">
-      var text = new PointText(new Point(view.size.width/3,view.size.height/3));
+      var text = new PointText(new Point(170,130));
       text.fillColor = 'white';
-      text.fontSize = 30;
+      text.fontSize = 16;
       text.fontFamily = 'cursive';
       text.content = 'Press any key between A-Z';
+      var text2 = new PointText(new Point(1518-370,130));
+      text2.fillColor = 'white';
+      text2.fontSize = 16;
+      text2.fontFamily = 'cursive';
+      text2.content = 'Press any key between A-Z';
+      console.log(view.size.width);
 
       var keyData = {
            a:{
